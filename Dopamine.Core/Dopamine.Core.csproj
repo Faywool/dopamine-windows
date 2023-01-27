@@ -38,12 +38,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CSCore">
-      <HintPath>..\Dopamine\Libraries\CSCore.dll</HintPath>
-    </Reference>
-    <Reference Include="CSCore.Ffmpeg">
-      <HintPath>..\Dopamine\Libraries\CSCore.Ffmpeg.dll</HintPath>
-    </Reference>
     <Reference Include="Digimezzo.Foundation.Core">
       <HintPath>..\Dopamine\Libraries\Digimezzo.Foundation.Core.dll</HintPath>
     </Reference>
@@ -168,6 +162,16 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSCore.Ffmpeg\CSCore.Ffmpeg.csproj">
+      <Project>{f4e6168a-b2cb-413c-ae0e-0d8b856b425e}</Project>
+      <Name>CSCore.Ffmpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSCore\CSCore.csproj">
+      <Project>{c3dccfe3-dd3f-4eee-849b-33e355b1e064}</Project>
+      <Name>CSCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -40,9 +40,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CSCore">
-      <HintPath>..\Dopamine\Libraries\CSCore.dll</HintPath>
-    </Reference>
     <Reference Include="Digimezzo.Foundation.Core">
       <HintPath>..\Dopamine\Libraries\Digimezzo.Foundation.Core.dll</HintPath>
     </Reference>
@@ -260,6 +257,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CSCore\CSCore.csproj">
+      <Project>{c3dccfe3-dd3f-4eee-849b-33e355b1e064}</Project>
+      <Name>CSCore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dopamine.Core\Dopamine.Core.csproj">
       <Project>{7faac843-6aa9-4b5b-8678-937137a61e47}</Project>
       <Name>Dopamine.Core</Name>
