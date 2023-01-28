@@ -73,12 +73,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CSCore\CSCore.csproj">
-      <Project>{c3dccfe3-dd3f-4eee-849b-33e355b1e064}</Project>
-      <Name>CSCore</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="FFmpeg\bin\unix\x64\libavcodec.so.57">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -107,7 +101,12 @@
     <None Include="License.md" />
     <None Include="Readme.md" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CSCore\CSCore.csproj">
+      <Project>{c3dccfe3-dd3f-4eee-849b-33e355b1e064}</Project>
+      <Name>CSCore</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="FFmpeg\bin\windows\x64\avcodec-57.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
