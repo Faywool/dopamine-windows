@@ -40,9 +40,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Digimezzo.Foundation.Core">
-      <HintPath>..\Dopamine\Libraries\Digimezzo.Foundation.Core.dll</HintPath>
-    </Reference>
     <Reference Include="DiscordRPC, Version=1.0.175.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DiscordRichPresence.1.0.175\lib\net35\DiscordRPC.dll</HintPath>
     </Reference>
@@ -148,6 +145,10 @@
     <ProjectReference Include="..\Dopamine.Core\Dopamine.Core.csproj">
       <Project>{7faac843-6aa9-4b5b-8678-937137a61e47}</Project>
       <Name>Dopamine.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Digimezzo\Digimezzo.Foundation.Core\Digimezzo.Foundation.Core.csproj">
+      <Project>{f376ccca-325f-4533-934d-a9c4a7cfc69b}</Project>
+      <Name>Digimezzo.Foundation.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

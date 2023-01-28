@@ -38,12 +38,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Digimezzo.Foundation.Core">
-      <HintPath>..\Dopamine\Libraries\Digimezzo.Foundation.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Digimezzo.Foundation.WPF">
-      <HintPath>..\Dopamine\Libraries\Digimezzo.Foundation.WPF.dll</HintPath>
-    </Reference>
     <Reference Include="DiscordRPC, Version=1.0.175.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DiscordRichPresence.1.0.175\lib\net35\DiscordRPC.dll</HintPath>
     </Reference>
@@ -164,13 +158,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CSCore.Ffmpeg\CSCore.Ffmpeg.csproj">
+    <ProjectReference Include="..\Libraries\CSCore\CSCore.Ffmpeg\CSCore.Ffmpeg.csproj">
       <Project>{f4e6168a-b2cb-413c-ae0e-0d8b856b425e}</Project>
       <Name>CSCore.Ffmpeg</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CSCore\CSCore.csproj">
+    <ProjectReference Include="..\Libraries\CSCore\CSCore\CSCore.csproj">
       <Project>{c3dccfe3-dd3f-4eee-849b-33e355b1e064}</Project>
       <Name>CSCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Digimezzo\Digimezzo.Foundation.Core\Digimezzo.Foundation.Core.csproj">
+      <Project>{f376ccca-325f-4533-934d-a9c4a7cfc69b}</Project>
+      <Name>Digimezzo.Foundation.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Digimezzo\Digimezzo.Foundation.WPF\Digimezzo.Foundation.WPF.csproj">
+      <Project>{db02d05f-5fd8-4d14-b446-354de8b4791e}</Project>
+      <Name>Digimezzo.Foundation.WPF</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

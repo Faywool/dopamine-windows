@@ -46,9 +46,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Digimezzo.Foundation.Core">
-      <HintPath>..\Dopamine\Libraries\Digimezzo.Foundation.Core.dll</HintPath>
-    </Reference>
     <Reference Include="DiscordRPC, Version=1.0.175.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DiscordRichPresence.1.0.175\lib\net35\DiscordRPC.dll</HintPath>
     </Reference>
@@ -110,6 +107,10 @@
     <ProjectReference Include="..\Dopamine.Services\Dopamine.Services.csproj">
       <Project>{C7C13D3A-BEF1-4825-9C60-14AAEC9714B3}</Project>
       <Name>Dopamine.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Libraries\Digimezzo\Digimezzo.Foundation.Core\Digimezzo.Foundation.Core.csproj">
+      <Project>{f376ccca-325f-4533-934d-a9c4a7cfc69b}</Project>
+      <Name>Digimezzo.Foundation.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
